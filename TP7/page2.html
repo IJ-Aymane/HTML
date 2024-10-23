@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - Informations personnelles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="article.php"  method="post">
+        <h2>Informations personnelles</h2>
+        <div div class="nom_">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" placeholder="votre nom?">
+        </div>
+       
+        <label>Sexe:</label>
+        <input type="radio" id="femme" name="sexe" value="F">
+        <label for="femme">F</label>
+
+        <input type="radio" id="homme" name="sexe" value="M">
+        <label for="homme">M</label><br><br>
+
+        <label>Langues:</label>
+
+        <input type="checkbox" id="ar" name="langue" value="Ar">
+        <label for="ar">Ar</label>
+
+        <input type="checkbox" id="fr" name="langue" value="Fr">
+        <label for="fr">Fr</label>
+
+        <input type="checkbox" id="esp" name="langue" value="Esp">
+        <label for="esp">Esp</label>
+
+        <input type="checkbox" id="ang" name="langue" value="Ang">
+        <label for="ang">Ang</label><br><br>
+
+        <div class="specialite-container">
+
+            <label for="specialite" class="specialite-label">Spécialité:</label>
+            
+            <select id="specialite" name="specialite" class="specialite-select">
+                <option value="informatique">Informatique</option>
+                <option value="management">Management</option>
+                <option value="telecommunication">Télécommunication</option>
+                <option value="logistique">Logistique</option>
+            </select>
+        </div>
+
+        <div class="adresse-container">
+            <label for="adresse">Adresse:</label>
+            <textarea id="adresse" name="adresse" placeholder="Votre adresse ?"></textarea>
+        </div>
+        
+
+        <div class="actions">
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </div>
+    </form>
+</body>
+</html>

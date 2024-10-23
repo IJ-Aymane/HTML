@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #33EEFF;
+        }
+        h3, p ,ol { 
+            color: #0000DD;
+        }
+        h1{
+            color: #FFFFCC;
+        }
+        IMG{
+            position: relative; 
+            left: 45%;
+
+        }
+        .polynome {
+            margin-left:50%
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Execices en langage C</h1>
+    <h3><u>Exercice 1</u></h3>
+    <p>Calculer pour une valeur X donne du type <b>float</b> la valeur numerique d'un polynome de degre n: 
+    </p><br>
+    <p  class="polynome">P(x) = A<sub>n</sub>X<sup>n</sup> + A<sub>n-1</sub>X<sup>n-1</sup> + ... + A<sub>1</sub>X + A<sub>0</sub></p>
+    <p>Les valeurs des coefficients  A<sub>n</sub>,....,A<sub>0</sub>seront entrees au clavier et memorisees dans un tableau A de type <b>float</b> et de dimension <sub>n+1</sub></p>
+    <ol type="a">
+        <li>Utiliser la fonction <b>pow()</b> pour le calcul.</li>
+        <li>Utilisez le <i>shema de Horner</i> qui evite les operations d'exponentiation:</li>
+        <img class="IMG" src="shema de Horner.gif" alt="shema de Horner" >
+    </ol>
+</body>
+</html>

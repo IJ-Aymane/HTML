@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function validateForm() {
+            var login = document.getElementById("login").value;
+            var password = document.getElementById("password").value;
+            
+            if (login === "aymane" && password === "aymane123") {
+                return true;
+            } else {
+                alert("Invalid login or password!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validateForm()" action="page2.html" method="post">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <a href="page2.html"></a>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </form>
+</body>
+</html>
